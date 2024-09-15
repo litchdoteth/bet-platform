@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #915e27;
+  --text-color: #ffffff;
+  --gamba-ui-primary-color: #bba994;
+
+  --gamba-ui-border-radius: 10px;
+
+  --gamba-ui-button-default-background: #ffab51;
+  --gamba-ui-button-default-background-hover: #ffb764;
+  --gamba-ui-button-default-color: white;
+
+  --gamba-ui-button-main-background: #ffab51;
+  --gamba-ui-button-main-color: rgb(0, 0, 0);
+  --gamba-ui-button-main-background-hover: #ffb764;
+
+  --gamba-ui-input-background: #ffab51;
+  --gamba-ui-input-color: #000000;
+  --gamba-ui-input-background-hover: #ffb764;
+}
+
+body, input, button, textarea, pre {
+  font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  cursor: default;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--gamba-ui-primary-color);
+}
+
+.wallet-adapter-button.wallet-adapter-button-trigger {
+  height: 40px;
+  line-height: 40px;
+  font-weight: normal;
+  background: rgb(55, 57, 82);
+  border-radius: 10px;
+}
