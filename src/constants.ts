@@ -46,6 +46,10 @@ export const POOLS = [
     lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
     // Wormhole:
     lp('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
+    // GUAC:
+    lp('HSEz6BpjtA6bQb1MhXgejME8gvFKCAhxDKVxDHzVSuAX'),
+    // Bonk:
+    lp('CUCJSCaAhnXFRHcyo4wyUj2iz9cWhJ6nrcip9Gc99YmQ'),
 
   //---------------------------------------
   // Fake token:
@@ -71,9 +75,29 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     usdPrice: 0,
   },
   {
+    mint: new PublicKey('HSEz6BpjtA6bQb1MhXgejME8gvFKCAhxDKVxDHzVSuAX'),
+    name: 'Guacamole',
+    symbol: 'GUAC',
+    image: 'https://raw.githubusercontent.com/gamba-labs/gamba/main/apps/explorer/public/logos/guacamole.png',
+    baseWager: 1e6,
+    decimals: 6,
+    usdPrice: 0,
+  },
+  {
+    mint: new PublicKey('CUCJSCaAhnXFRHcyo4wyUj2iz9cWhJ6nrcip9Gc99YmQ'),
+    name: 'Bonk',
+    symbol: 'Bonk',
+    image: 'https://quei6zhlcfsxdfyes577gy7bkxmuz7qqakyt72xlbkyh7fysmoza.arweave.net/hQiPZOsRZXGXBJd_82PhVdlM_hACsT_q6wqwf5cSY7I',
+    baseWager: 1e6,
+    decimals: 6,
+    usdPrice: 0,
+  },
+
+
+  {
     mint: new PublicKey('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
-    name: 'W',
-    symbol: 'Wormhole',
+    name: 'Wormhole',
+    symbol: 'W',
     image: 'https://wormhole.com/token.png',
     baseWager: 1e6,
     decimals: 6,
