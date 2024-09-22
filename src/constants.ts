@@ -40,7 +40,9 @@ const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): 
  */
 export const POOLS = [
 
-    // SOL:
+   lp('PkWGDUGYQrWptHt9bYjH4oTKuegByJaiFuo1oGkhr3V'),
+
+  // SOL:
     lp('So11111111111111111111111111111111111111112'),
     // USDC:
     lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
@@ -72,6 +74,16 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     image: '/fakemoney.png',
     baseWager: 1e9,
     decimals: 9,
+    usdPrice: 0,
+  },
+  
+  {
+    mint: new PublicKey('PkWGDUGYQrWptHt9bYjH4oTKuegByJaiFuo1oGkhr3V'),
+    name: 'Bet Your Memes',
+    symbol: 'BYME',
+    image: 'https://raw.githubusercontent.com/gamba-labs/gamba/main/apps/explorer/public/logos/betyourmemes.png',
+    baseWager: 1e6,
+    decimals: 6,
     usdPrice: 0,
   },
   {
